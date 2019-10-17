@@ -1,0 +1,235 @@
+.food-order-page{
+    margin-top:5%;
+}
+.food-order{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.food-list{
+    flex:3;
+    margin: 10px 0px 10px;  
+   
+}
+.food-billing{
+    /* background: #fff;
+    padding: 5px;
+    flex: 1 1; */
+    /* box-shadow: 8px 0 10px 11px #DDd; */
+    background: #fff;
+    color:#555;
+    padding: 5px;
+    position: fixed;
+
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    top: 50px;
+    border-left:1px solid #d4d4d4;
+
+}
+.food-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-item{
+    border: 1px solid #e8e8e8;
+    width: 170px;
+    height: 129px;
+    margin:5px; 
+   cursor: pointer;
+    border-radius:5px;
+      
+}
+.food-item-box{
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+}
+.food-name{flex:1}
+.food-price{flex:0.3}
+.food-green{background:#4caf50}
+.food-red{   background: #F44336;}
+.food-item:hover{
+    box-shadow:2px 2px 3px 3px #f1f1f1;
+}
+
+.food-item img{
+    width: 100%;
+    height: 69px;
+    object-fit: cover;
+}
+.food-content{
+    margin:0 12px;
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.food-btn{
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+    min-width: 170px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+  
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    margin:3px;
+}
+.food-btns{
+display:flex;
+
+}
+.food-cancel-btn{
+ background: #000;
+ color:#fff;
+}
+.food-print-btn{
+    background: #fff;
+    color:#000;
+    border:2px solid #000;
+}
+.food-billing-list{
+    max-height: 300px;
+    overflow: auto;
+    border-top: 2px solid #FFC107;
+    border-bottom: 2px solid #FFC107;
+}
+.food-billing-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.food-bill-item{
+    font-size:18px;
+    flex:1.4;
+}
+.food-bill-price{
+    font-size:18px;
+    display:flex;
+    justify-content: flex-end;
+    flex:1;
+}
+.food-bill-quantity{
+    display: flex;
+    border: 1px solid #4caf50;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    width: 99px;
+    font-size: 20px;
+    font-weight: 700;
+    flex:0.6;
+    margin:0 2px;
+}
+.food-bill-quantity span{
+    cursor:pointer
+}
+.food-bill-amount{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.food-disabled{
+    pointer-events: none;
+    opacity: 0.5
+}
+
+.loader-hide{
+    display:none
+}
+
+.food-loader {
+    border: 4px solid #02040D;
+    border-radius: 53%;
+  border-bottom:4px solid #eee;
+    width: 65px;
+    height: 65px;
+    animation: spin 1s linear infinite;
+    margin-left:45%;
+    margin-top:2%
+  }
+  
+
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .food-item-side{
+      display:none;
+  }
+  
+  .food-item-box:hover .food-item-side{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+.food-item-edit-price{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+ .food-new-item{
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+ }
+ .food-new-item input,  .food-new-item select{
+    margin: 5px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #ddd;
+ }
+
+ .food-new-item input:focus ,  .food-new-item select:focus{
+     border:2px solid #565656
+ }
+
+ .food-add-btn{
+    color: #3f51b5;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    cursor:pointer;
+ }
+
+ .skeleton-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ .skeleton-box{
+     margin-top:10px;
+ }
+
+ .change-price-input{
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    width: 100%;
+    margin: 5px;
+    box-sizing: border-box;
+ }

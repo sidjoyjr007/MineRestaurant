@@ -1,0 +1,97 @@
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page{
+    display: flex;
+    height:100vh;
+    background:linear-gradient(to right, #614385, #382a84);
+    clip-path: circle(41.4% at 0 0);
+    animation:begin 1.5s forwards ease-in-out;
+   
+}
+
+@keyframes begin{
+  to{
+    clip-path: circle(141.4% at 0 0);
+
+  }
+}
+
+.login-page-logo{
+    flex:1;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.logo-text{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+.login-page .login-card{
+    flex:1;
+    width: 400px;
+    /* background: linear-gradient(to right, #330454, #5309a0); */
+    border-radius: 3px;
+    min-height: 300px;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+  
+}
+.login-content{
+    background: #ffe8a4;
+    margin: 20%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.login-heading{
+    text-align:center;
+    margin:20px;
+    font-size: 25px;
+    font-weight: 600;
+    color:#000;
+}
+.login-btn{
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+    min-width: 170px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    background: #000;
+    box-sizing: border-box;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.input input{
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #1f1d1d;
+    padding: 12px 66px;
+    min-width: 350px;
+    margin: 9px;
+    box-sizing: border-box;
+}
+.userName-input{
+    background:url('../../content/img/user.png');
+    background-position: left center;
+    background-size: 8%;
+    background-repeat: no-repeat;
+}
+.password-input{
+    background:url('../../content/img/password.png');
+    background-position: left center;
+    background-size: 8%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,67 @@
+.list-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%
+}
+
+.list-card{
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 210px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+.list-card-name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 8px;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+.list-card-image img{
+    width:100%
+}
+.list-card:hover{
+    box-shadow: 0 2px 3px #ddd;
+    background: #503188;
+    border: none;
+}
+.list-card:hover .svg path{
+    fill:#fff;
+}
+.list-card:hover .list-card-name {
+color:#fff;
+}
+.svg{
+    width: 100%;
+    height: 122px;
+    margin: 9px 0;
+
+}
+.svg path{
+    fill:transparent;
+    stroke:#000;
+    
+    animation:draw 1s forwards linear
+      
+}
+.history-svg{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+}
+.food-svg{
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+@keyframes draw{
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
