@@ -1,5 +1,9 @@
 This is a simple billing restaurant software.
 
+## See application @ heroku
+  [heroku link](https://minerestaurant.herokuapp.com/)
+  ## user name- "admin"
+  ## Password -"admin@007"
 ## Things used
 
 React.JS,
