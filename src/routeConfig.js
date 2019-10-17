@@ -16,8 +16,8 @@ class RouteConfig extends Component {
           {/* If 'auth' is 'true' goto 'Main' page otherwise 'Login' page */}
           <Route exact path="/" component={this.props.auth ? Main : Login} />
 
-          <Route path="/Food" component={Food} />
-          <Route path="/Analysis" component={Analysis} />
+          <Route path="/Food" component={this.props.auth?Food:Login} />
+          <Route path="/Analysis" component={this.props.auth?Analysis:Login} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Fragment>
