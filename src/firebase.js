@@ -4,7 +4,7 @@ import firestore from 'firebase/firestore'
 // const settings = {timestampsInSnapshots: true};
 
 const config = {
-    apiKey: "AIzaSyBNZUGIdFEzFXjQlLrebfQklFkT1Oa4n3A",
+  apiKey: "AIzaSyBNZUGIdFEzFXjQlLrebfQklFkT1Oa4n3A",
     authDomain: "food-b2523.firebaseapp.com",
     databaseURL: "https://food-b2523.firebaseio.com",
     projectId: "food-b2523",
